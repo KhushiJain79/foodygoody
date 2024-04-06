@@ -1,7 +1,6 @@
-
+require('dotenv').config(); 
 const mongoose = require("mongoose");
-const db =
-  "mongodb+srv://food:AB9$NhmjK4bfJcB@cluster0.gnmz8hz.mongodb.net/fooddatabase";
+const db =process.env.CLUSTER_NAME;
 
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 
