@@ -1,6 +1,6 @@
 require('dotenv').config(); 
 const mongoose = require("mongoose");
-const db =${{secrets.CLUSTER_NAME}};
+const db =process.env.CLUSTER_NAME;
 
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 
